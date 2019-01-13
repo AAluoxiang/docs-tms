@@ -17,27 +17,56 @@
       // homepage:'/v2/README.md', //首页
       loadNavbar:true,             //导航栏-默认加载_navbar.md
       name: '富鹊云TMS操作说明',               //右上角名称
-      // repo: 'docsifyjs/docsify',//github挂件
+      // logo:'https://docsify.js.org/_media/icon.svg',
+      repo: 'AAluoxiang/docs-tms',//github挂件
       coverpage:true,
       onleCover:true,
       loadSidebar:true,            //左侧栏-默认加载_sidebar.md
+      autoHeader: true,
       notFoundPage:true,           //404 page -默认加载 _404.md
 
-      maxLevel:6,
+      auto2top: true,
+      executeScript: true,
+      // maxLevel:6,
       subMaxLevel:6,
       pagination: {
         previousText: '上一章节',
         nextText: '下一章节',
       },
+
+      // 配置 全文搜索
+      // search:'auto', // 默认配置
+      search:{
+        maxAge:86400000,
+        paths:'auto',
+        placeholder:'搜索',
+        depth:6,
+      },
+      noEmoji: false,
+     
     }
   </script>
-  <!-- <script src="//unpkg.com/vue"></script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+  <!-- <script src="//unpkg.com/vue"></script> -->
+  <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>  -->
   <script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
   <script src="https://cdn.bootcss.com/docsify/4.8.6/docsify.min.js"></script>
+  <script src="https://cdn.bootcss.com/docsify/4.8.6/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.bootcss.com/docsify/4.8.6/plugins/search.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/search.js"></script> -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script> -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script> -->
+  <!-- <script src="//unpkg.com/docsify-plugin-codefund/index.js"></script> -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script> -->
+
+
+
+
+
   <!-- <script src="vue.min.js"></script>
-  <script src="docsify.min.js"></script> -->
+  <script src="docsify.min.js"></script>
+  <script src="zoom-image.min.js"></script> -->
+
 </body>
 </html>
